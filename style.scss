@@ -112,22 +112,26 @@ $cafe: #c29372;
 $ahuesado-2: #e1d5c4;
 $texto-gris: #333333;
 
+body {
+	background:$ahuesado;
+}
+
 /*Praxis*/
 header {
 	width:100%;
 	@include transicion;
 	
-	.container {
-		position:relative;
-	}
-	
 	background:$rojo;
-	-webkit-box-shadow: 0px 2px 16px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 2px 16px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 2px 16px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.75);
+	
 	padding:12px 0 17px 0;
 	position:relative;
 	overflow:visible;
+	.container {
+		position:relative;
+	}
 	
 	nav ul {
 		margin-bottom: 0;
@@ -135,34 +139,40 @@ header {
 			list-style:none;
 			display:inline-block;
 			width:19%;
-			font-weight:700;
+			
 			padding-top:47px;
 			font-size:$em-1 * 0.72;
 			text-transform:uppercase;
 			
+			
 				a {
+					font-weight:800;
 					color:$ahuesado;		
+					padding-bottom: 2px;
+					letter-spacing:1px;
 				}
 				a:focus, a:hover {
-					color:$ahuesado-2;		
+					color:$ahuesado-2;
+					text-decoration:none;		
+					border-bottom: 3px solid;
 				}
 		}//li
 	}//nav-ul
 	nav select {
 	  display: none;
 	}	
-	@media (max-width: 768px) {
+	@media (max-width: 991px) {
 	  nav ul     { display: none; }
 	  nav select { 
 	  	display: inline-block; 
 		margin-top:42px; 
 		width:50%; 
 		margin-left:25%;
-		@media (max-width: 768px) {
-			margin-top:10px; 
+		@media (max-width: 991px) {
+			margin-top:21px; 
 		}
-		@media only screen and (max-device-width: 768px) {
-			margin-top:10px; 
+		@media only screen and (max-device-width: 991px) {
+			margin-top:21px; 
 		}
 	  }
 	}	
@@ -216,7 +226,7 @@ header {
 				padding:3px 6px;
 				border-radius:12px;
 				float:left;
-				margin-top:10px;
+				margin-top:8px;
 				@media (max-width: 768px) {
 					margin-left:10%;
 				}
@@ -241,6 +251,26 @@ header {
 
 }//header
 
+
+
+header#nohome {
+	background:$ahuesado;
+	nav ul {
+		li {
+			a {
+				font-weight:800;
+				color:$rojo;		
+			}
+			a:focus, a:hover {
+				color:$rojo;
+			}
+		}//li
+	}//nav-ul
+}//header
+
+
+
+
 #contenido.scrolled{
 	padding-top:51px;
 		@media (max-width: 768px) {
@@ -253,9 +283,10 @@ header {
 }
 header.fijo {
 	position:fixed;
-	z-index:99;
+	z-index:9999;
 	padding:10px 0 7px 0;
 	@include transicion;
+	background:rgba(209,75,57,.9);
 
 	nav ul {
 		margin-bottom: 0;
@@ -355,6 +386,16 @@ header.fijo {
 				width:71%;
 				
 			}
+			@media (max-width: 480px) {
+				width:100%;
+				margin:0;
+				font-size:18px;
+			}
+			@media only screen and (max-device-width: 480px) {
+				width:100%;
+				margin:0;
+				font-size:18px;
+			}
 			span.fecha {
 				font-size:$em-1 * 0.7;
 				font-weight:700;
@@ -370,11 +411,553 @@ header.fijo {
 					top:-50%;
 					
 				}
+				@media (max-width: 480px) {
+					top:-18%;
+					font-size:$em-1 * 0.5;
+				}
+				@media only screen and (max-device-width: 480px) {
+					top:-18%;
+					font-size:$em-1 * 0.5;
+				}
+			}
+			span.ico-cat-slide-home {
+				position:absolute;
+				display:block;
+				width:40px;
+				height:40px;
+				top:175%;
+				right:0;
+				z-index:99;
+				@media (max-width: 990px) {
+					top:123%;
+				}
+				@media only screen and (max-device-width: 990px) {
+					top:123%;
+				}
+			}
+			span.ico-socioambiental{
+				background:url(img/ico-cat-slider.png) center center no-repeat;
 			}
 			
+			
+			
 		}
-		
-		
 }
 //slider-home
 
+#areas-home {
+	margin:54px 0 36px 0;
+	@include box;
+	width:100%;
+	float:left;
+	
+	.caja-area {
+		min-height:510px;
+		@include transicion;
+		@media (max-width: 991px) {
+			height:510px;
+				&:hover {
+					height:510px;
+					@include transicion;
+				}
+		}
+		@media only screen and (max-device-width: 991px) {
+			height:510px;
+				&:hover {
+					height:510px;
+					@include transicion;
+				}
+		}
+
+
+		@media (max-width: 610px) {
+			height:680px;
+				&:hover {
+					height:680px;
+					@include transicion;
+				}
+		}
+		@media only screen and (max-device-width: 610px) {
+			height:680px;
+				&:hover {
+					height:680px;
+					@include transicion;
+				}
+		}
+		
+		.ico-area {
+			display:block;
+			width:147px;
+			height:147px;
+			margin:0 auto;
+			text-align:center;
+			background:none;
+			border-radius:50%;
+			@include transicion;
+			margin-bottom:20px;
+		}
+		
+		.ico-estudios-teoricos {
+			@media (max-width: 991px) {
+				background:$cafe;
+			}
+			@media only screen and (max-device-width: 991px) {
+				background:$cafe;
+			}
+		}
+		.ico-trabajo {
+			@media (max-width: 991px) {
+				background:$rojo;
+			}
+			@media only screen and (max-device-width: 991px) {
+				background:$rojo;
+			}
+		}
+		.ico-comunicacion-politica {
+			@media (max-width: 991px) {
+				background:$naranjo;
+			}
+			@media only screen and (max-device-width: 991px) {
+				background:$naranjo;
+			}
+		}
+		.ico-socioambiental {
+			@media (max-width: 991px) {
+				background:$amarillo;
+			}
+			@media only screen and (max-device-width: 991px) {
+				background:$amarillo;
+			}
+		}
+		
+		h4{
+			text-transform:uppercase;
+			font-weight:700;
+			letter-spacing:1px;
+			margin-bottom:20px;
+		}
+		p {
+			opacity:0;
+			text-align:left!important;
+			@include adelle;
+			font-size:$em-1 * 0.999!important;
+			@include transicion;
+			@media (max-width: 991px) {
+				display:block;
+				opacity:1;
+			}
+			@media only screen and (max-device-width: 991px) {
+				display:block;
+				opacity:1;
+			}
+		}
+		a {
+			display:inline-block;
+			opacity:0;
+			@include transicion;
+			margin:0 auto;
+			text-align:center;
+			padding:3px 10px;
+			border:1px solid $cafe;
+			color:$cafe;
+			margin-top:25px;
+			font-size:$em-1 * 0.7;
+			text-transform:uppercase;
+			font-weight:700;
+			@media (max-width: 991px) {
+				display:inline-block;
+				opacity:1;
+				@include transicion;
+			}
+			@media only screen and (max-device-width: 991px) {
+				display:inline-block;
+				opacity:1;
+				@include transicion;
+			}
+			
+			&:hover, &:focus {
+				border:1px solid $cafe;
+				color:#FFF;
+				background:$cafe;
+				@include transicion;
+				text-decoration:none;
+			}
+		}//a
+		&:hover > a {
+			opacity:1;
+			@include transicion;
+		}
+		&:hover > p {
+			opacity:1;
+			@include transicion;
+		}
+		&:hover > .ico-estudios-teoricos {
+			background:$cafe;
+			border-radius:50%;
+		}
+		&:hover > .ico-trabajo {
+			background:$rojo;
+			border-radius:50%;
+		}
+		&:hover > .ico-comunicacion-politica {
+			background:$naranjo;
+			border-radius:50%;
+		}
+		&:hover > .ico-socioambiental {
+			background:$amarillo;
+			border-radius:50%;
+		}
+		
+		
+		
+		
+	}//caja-area
+}
+
+#publicaciones {
+	.titular {
+		h2 {
+			text-transform:uppercase;
+			display:block;
+			width:100%;
+			text-align:center;
+			color:$rojo;
+			font-size:30px;
+			margin-top:50px;
+			margin-bottom:20px;
+			font-weight:700;
+			letter-spacing:1px;
+		}
+	}
+	
+	.botonera {
+		@include box;
+		float:left;
+		width:100%;
+		margin-bottom:60px;
+		ul {
+		overflow: hidden;
+		text-align:center;
+			li {
+				display:inline-block;
+				*display:inline; /*IE7*/
+				*zoom:1; /*IE7*/
+				overflow:hidden;
+				margin:0 10px;
+				a {
+					display:inline-block;
+					padding:11px 20px;
+					border:1px solid $rojo;
+					color:$rojo;
+					background:$ahuesado;
+					@include transicion;
+					text-transform:uppercase;
+					font-weight:700;
+					font-size:11px;
+					&:hover {
+						@include transicion;
+						background:$rojo;
+						color:$ahuesado;
+						text-decoration:none;
+					}
+				}
+			} 
+		}
+	}
+}
+//publicaciones
+
+/*Single*/
+#imagen-titular {
+	height:350px;
+	@include cover;
+	
+	div {
+		height:100%;
+	}
+	h2 {
+		color:#FFF;
+		font-weight:700;
+		display:block;
+		width:100%;
+		position:relative;
+		float:left;
+		font-size:36px!important;
+	}
+}
+#meta-single {
+	margin-top:38px;
+	margin-bottom:39px;
+	position:relative;
+	overflow:visible;
+		@media (max-width: 768px) {
+			margin-bottom:10px;
+		}
+		@media only screen and (max-device-width: 768px) {
+			margin-bottom:10px;
+		}
+	span.ico-cat-single {
+		position:absolute;
+		z-index:9;
+		@include box;
+		width:50px;
+		height:50px;
+		top:-10px;
+		left:-63px;
+	}
+	span.cat-socioambiental {
+		background:url(img/ico-cat-single.png) center center no-repeat;
+	}
+		
+	p {
+		line-height:14px;
+		font-weight:700;
+		font-size:12px!important;
+		letter-spacing:1px;
+		
+		a {
+			text-transform:uppercase;
+			color:$rojo;
+			&:hover {
+				color:$rojo;
+			}
+		}
+	}
+	ul {
+		margin:0;
+		display:block;
+		float:right;
+		@media (max-width: 768px) {
+			float:left;
+			margin-top:10px;
+		}
+		@media only screen and (max-device-width: 768px) {
+			float:left;
+			margin-top:10px;
+		}
+			li {
+				list-style:none;
+				display:inline-block;
+				float:left;
+				a{
+					color:#333;
+					span {
+					transform:scale(.9,.9);
+					}
+				}
+			}
+	}
+}
+
+#autor-archivos {
+	margin-bottom:37px;
+	position:relative;
+	p {
+		display:inline-block;
+		padding-top:5px;
+		line-height:14px;
+		font-weight:700;
+		font-size:13px!important;
+		letter-spacing:1px;
+		@media (max-width: 768px) {
+			margin-bottom:20px;
+		}
+		@media only screen and (max-device-width: 768px) {
+			margin-bottom:20px;
+		}
+	}
+	img {
+		float:right;
+		@media (max-width: 768px) {
+			float:left;
+		}
+		@media only screen and (max-device-width: 768px) {
+			float:left;
+		}
+	}
+}
+#texto-post {
+	h1, h2, h3, h4, h5, h6, blockquote, p, li, a{
+		@include adelle;
+		margin-bottom:30px;	
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight:700;
+	}
+	p {
+		line-height:$em-1 * 1.7;
+	}
+	.excerpt-single {
+		p{
+			font-weight:700;
+			line-height:$em-1 * 1.5;
+			font-size:17px!important;
+		}
+	}
+	
+}
+.comentarios-single {
+	margin-top:74px;
+	margin-bottom:76px;
+	float:left;
+	@include box;
+	h2 {
+		text-transform:uppercase;
+		display:block;
+		float:left;
+		color:$rojo;
+		font-size:20px;
+		margin-bottom:10px;
+		font-weight:700;
+		letter-spacing:1px;
+	}
+}
+
+
+/*Financiamiento*/
+#financiamiento {
+	h2 {
+		text-transform:uppercase;
+		display:block;
+		float:left;
+		width:100%;
+		color:$rojo;
+		font-size:24px;
+		margin-bottom:10px;
+		font-weight:700;
+		letter-spacing:1px;
+		margin:41px 0 50px;
+	}
+	p{
+		display:block;
+		@include adelle;
+		line-height:$em-1 * 1.7;
+		font-size:15px!important;
+		margin-bottom:40px;
+	}
+	a {
+		display:inline-block;
+		padding:6px 40px;
+		color:$rojo;
+		border:1px solid $rojo;
+		font-size:9px;
+		font-weight:7000;
+		text-transform:uppercase;
+		margin:10px 0 200px 0;
+		@include transicion;	
+		
+		&:hover {
+			color:$ahuesado;
+			background:$rojo;
+			border:1px solid $rojo;
+			@include transicion;
+			text-decoration:none;
+		}
+	}	
+}//financiamiento
+
+/*Contacto*/
+#contacto {
+	h2 {
+		text-transform:uppercase;
+		display:block;
+		float:left;
+		width:100%;
+		color:$rojo;
+		font-size:24px;
+		font-weight:700;
+		letter-spacing:1px;
+		margin:100px 0 14px;
+	}
+	p {
+		display:block;
+		font-weight:700;
+		margin-bottom:45px;
+		font-size:12px;
+	}
+	fieldset {
+		border:0;
+		padding-left:0;
+		label {
+			text-align:left;
+			padding-top:0;
+			font-size:12px;
+		}
+		input[type=text], input[type=email], textarea {
+			border:none;
+			border-radius:0;
+			&:focus {
+				border:1px solid $rojo;
+				box-shadow:none;
+			}
+		}
+		textarea {
+			height:120px
+		}
+		button {
+			background:$ahuesado;
+			border-radius:0;
+			border-color:$rojo;
+			text-transform:uppercase;
+			color:$rojo;
+			font-size:12px;
+			font-weight:700;
+			letter-spacing:1px;
+		}
+		
+	}
+	.form-horizontal {
+		float:left;
+		width:100%;
+	}
+	p.bajada-contacto {
+		color:$rojo;
+		display:block;
+		margin:50px 0;
+		font-size:10px!important;
+		text-transform:uppercase;
+		font-weight:700;
+		letter-spacing:1px;
+	}
+}
+//contacto
+.mapa-contacto {
+	height:572px;
+}
+    .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+footer {
+	width:100%;
+	float:left;
+	padding:20px 0;
+	background:$ahuesado-2;
+	p {
+		color:$rojo;
+		text-transform:uppercase;
+		margin:0;
+		padding:0;
+		font-weight:700;
+		line-height:10px;
+		font-size:$em-1 * 0.77!important;
+		
+		a {
+			text-decoration:none;
+			font-style:italic;
+			font-weight:400;
+			color:$rojo;
+			&:hover {
+				color:$rojo;
+			}
+		}
+	}
+}
+//footer
+
+/*$rojo: #cd4b3d; 
+$ahuesado: #efe7da;
+$amarillo: #e8bf2d;
+$naranjo: #e5883b;
+$cafe: #c29372;
+$ahuesado-2: #e1d5c4;
+$texto-gris: #333333;*/
