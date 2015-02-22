@@ -1,3 +1,11 @@
+//slider-home
+$(window).load(function() {
+  $('#slider-home').flexslider({
+    animation: "slide",
+	controlNav: false,
+  });
+});
+
 // para transformar el menu
 $("<select />").appendTo("nav");
 $("<option />", {
@@ -33,9 +41,3 @@ $(window).bind('scroll', function () {
 	}
 });
 
-//slider-home
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});

@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,6 +19,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/modernizr.js" type="text/javascript"></script>
 	<script src="//use.typekit.net/anz0iba.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
   </head>
@@ -72,21 +74,42 @@
 
 		<section id="slider-home" class="flexslider">
               <ul class="slides">
-                <li>
-                  <img src="img/slider-1.jpg" />
+                <li style="background:url(img/slider-1.jpg) center center no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                	<div class="container">
+                    	<div class="col-slide col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 text-right">
+                        	
+                        	<div class="table">
+                            	<div class="table-cell">
+                                    <h2><span class="fecha">Jueves 5 de Febrero de 2015</span>
+                                    Estudio ambiental revela el nocivo impacto del derrame de petróleo ocurrido en las playas de Quintero.</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </li>
-                <li>
-                  <img src="img/slider-1.jpg" />
+                
+                <li style="background:url(img/slider-1.jpg) center center no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                	<div class="container">
+                    	<div class="col-slide col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 text-right">
+                        	
+                        	<div class="table">
+                            	<div class="table-cell">
+                                    <h2>
+                                    <span class="fecha">Jueves 5 de Febrero de 2015</span>
+                                    Estudio ambiental revela el nocivo impacto del derrame de petróleo ocurrido en las playas de Quintero.</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </li>
-                <li>
-                  <img src="img/slider-1.jpg" />
-                </li>
-                <li>
-                  <img src="img/slider-1.jpg" />
-                </li>
+                
               </ul>        	
         </section>
-
+		
+        <section id="areas-home">
+        </section>
 
 
 
@@ -100,5 +123,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
   </body>
 </html>

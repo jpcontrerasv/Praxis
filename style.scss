@@ -307,5 +307,74 @@ header.fijo {
 	}
 
 }
+#slider-home {
+	float:left;
+	display:block;
+	width:100%;
+	height:350px;
 
+		.flex-viewport, ul.slides, li, .container, .col-slide {
+			height:100%;
+		}
+		.col-slide {
+			position:relative;
+		}
+		h2 {
+			color:#FFF;
+			font-size:24px;
+			font-weight:700;
+			display:block;
+			width:51%;
+			position:relative;
+			float:right;
+			@media (max-width: 1713px) {
+				margin-right:8%;
+			}
+			@media only screen and (max-device-width: 1713px) {
+				margin-right:8%;
+				
+			}
+			@media (max-width: 1472px) {
+				margin-right:11%;
+			}
+			@media only screen and (max-device-width: 1472px) {
+				margin-right:11%;
+				
+			}
+			@media (max-width: 1320px) {
+				margin-right:15%;
+			}
+			@media only screen and (max-device-width: 1320px) {
+				margin-right:15%;
+				
+			}
+			@media (max-width: 663px) {
+				width:71%;
+			}
+			@media only screen and (max-device-width: 663px) {
+				width:71%;
+				
+			}
+			span.fecha {
+				font-size:$em-1 * 0.7;
+				font-weight:700;
+				position:absolute;
+				display:inline-block;
+				top:-90%;
+				right:0;
+				z-index:99;
+				@media (max-width: 990px) {
+					top:-50%;
+				}
+				@media only screen and (max-device-width: 990px) {
+					top:-50%;
+					
+				}
+			}
+			
+		}
+		
+		
+}
+//slider-home
 
