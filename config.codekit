@@ -844,6 +844,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/contacto.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contacto.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/bootstrap-theme.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -907,6 +916,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/financiamiento.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/financiamiento.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/img\/bg_play_pause.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -916,7 +934,95 @@
 		"outputAbbreviatedPath": "\/img\/bg_play_pause.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/header-financiamiento.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 409662,
+		"inputAbbreviatedPath": "\/img\/header-financiamiento.jpg",
+		"outputAbbreviatedPath": "\/img\/header-financiamiento.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/ico-cat-single.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2428,
+		"inputAbbreviatedPath": "\/img\/ico-cat-single.png",
+		"outputAbbreviatedPath": "\/img\/ico-cat-single.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/ico-cat-slider.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2092,
+		"inputAbbreviatedPath": "\/img\/ico-cat-slider.png",
+		"outputAbbreviatedPath": "\/img\/ico-cat-slider.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/ico-comunicacion-politica.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8046,
+		"inputAbbreviatedPath": "\/img\/ico-comunicacion-politica.png",
+		"outputAbbreviatedPath": "\/img\/ico-comunicacion-politica.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/ico-estudios-teoricos.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4834,
+		"inputAbbreviatedPath": "\/img\/ico-estudios-teoricos.png",
+		"outputAbbreviatedPath": "\/img\/ico-estudios-teoricos.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/ico-img-pdf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2484,
+		"inputAbbreviatedPath": "\/img\/ico-img-pdf.png",
+		"outputAbbreviatedPath": "\/img\/ico-img-pdf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/ico-socioambiental.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5597,
+		"inputAbbreviatedPath": "\/img\/ico-socioambiental.png",
+		"outputAbbreviatedPath": "\/img\/ico-socioambiental.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/ico-trabajo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7895,
+		"inputAbbreviatedPath": "\/img\/ico-trabajo.png",
+		"outputAbbreviatedPath": "\/img\/ico-trabajo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/img-titular-home.jpg": {
 		"fileType": 16384,
@@ -927,7 +1033,7 @@
 		"outputAbbreviatedPath": "\/img\/img-titular-home.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/img.jpg": {
 		"fileType": 16384,
@@ -938,7 +1044,18 @@
 		"outputAbbreviatedPath": "\/img\/img.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/logo-chico-rojo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1857,
+		"inputAbbreviatedPath": "\/img\/logo-chico-rojo.png",
+		"outputAbbreviatedPath": "\/img\/logo-chico-rojo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/logo-chico.png": {
 		"fileType": 32768,
@@ -949,7 +1066,18 @@
 		"outputAbbreviatedPath": "\/img\/logo-chico.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/logo-rojo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3858,
+		"inputAbbreviatedPath": "\/img\/logo-rojo.png",
+		"outputAbbreviatedPath": "\/img\/logo-rojo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/logo.png": {
 		"fileType": 32768,
@@ -960,7 +1088,7 @@
 		"outputAbbreviatedPath": "\/img\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/orig.jpg": {
 		"fileType": 16384,
@@ -971,7 +1099,7 @@
 		"outputAbbreviatedPath": "\/img\/orig.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/slider-1.jpg": {
 		"fileType": 16384,
@@ -982,7 +1110,7 @@
 		"outputAbbreviatedPath": "\/img\/slider-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.php": {
 		"fileType": 8192,
@@ -1070,6 +1198,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/publicaciones.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/publicaciones.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/sass\/ie.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1117,6 +1254,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/single.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/style.css": {
 		"fileType": 16,
