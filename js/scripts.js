@@ -41,3 +41,6 @@ $(window).bind('scroll', function () {
 	}
 });
 
+$('a.open-buscador').on('click', function(e){
+    $('input#inputbusqueda').toggleClass('expandido');
+});

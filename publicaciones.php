@@ -26,11 +26,11 @@
   <body>
   	<header id="nohome">
     	<div class="container no-column">
-        	<div id="logo-head" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+        	<div id="logo-head" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
             	<a href="index.php" class="logo-grande"><img src="img/logo-rojo.png" alt=""></a>
                 <a href="index.php" class="logo-chico ocultar"><img src="img/logo-chico-rojo.png" alt=""></a>
             </div>
-        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 no-column">
+        	<div class="col-lg-8 col-md-8 col-sm-7 col-xs-10 no-column">
                 <nav> 
                   <ul> 
                     <li><a href="#">Somos</a></li> 
@@ -41,12 +41,10 @@
                   </ul> 
                 </nav>
             </div>
-        	<div id="buscador" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center no-column">
-            	<form>
-                    <input type="text">
-                    <button type="submit">
-                    	<i class="fa fa-search fa-2x"></i>
-                    </button>
+        	<div id="buscador" class="col-lg-2 col-md-2 col-sm-3 col-xs-12 text-center no-column">
+            	<a class="open-buscador"><i class="fa fa-search fa-2x"></i></a>
+                <form>
+                    <input id="inputbusqueda" type="text">
                 </form>
             </div>
             
@@ -66,15 +64,31 @@
             	<div class="titular box fwidth fleft text-center">
                 	<h2>Publicaciones</h2>
                 </div>
-                <div class="botonera">
-                	<ul>
-                    	<li><a href="#">Estudios teóricos</a></li>
-                        <li><a href="#">Trabajo</a></li>
-                        <li><a href="#">Comunicación política</a></li>
-                        <li><a href="#">Socioambiental</a></li>
-                    </ul>
+                
+                <div id="botonera" class="col-lg-12">
+                	
                 </div>
-			
+            
+				<?php
+                function ae_detect_ie()
+                {
+                    if (isset($_SERVER['HTTP_USER_AGENT']) && 
+                    (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false))
+                        return true;
+                    else
+                        return false;
+                }
+                ?>
+                <?php  if (ae_detect_ie()) {  ?>
+                <div class="caja-ie-publicacion" style="background-image:url(img/img.jpg);">
+                    <span class="cat-rojo gris"></span>
+                    <p>hola</p>
+                </div>
+                <?php }  else { ?>
+                <div class="caja-publicacion caja-rojo" style="background-image:url(img/img.jpg);">
+                    <p>hola</p>
+                </div>
+                <? } ?>            
                 
                 
                                
@@ -91,19 +105,20 @@
         	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left no-column">
             	
                 <div class="box fwidth fleft">
-                	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
                     	<p>&copy; 2015</p>
-                        <p>Espacio Praxis</p>                        
+                        <p><span>Espacio Praxis</span></p>                        
                     </div>
                 	<div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    	<p>Eulogia Sanchez 065</p>
+                    	<p><span>Eulogia Sanchez 065</span></p>
                         <p>Santiago de Chile</p>                        
                     </div>
                 	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    	<p>Desarrollado</p>
-                        <p>por <a href="#">Cerro</a></p>                        
+                    	<p><span>Desarrollado</span></p>
+                        <p><span>por <a href="#">Cerro</a></span></p>                        
                     </div>
                 </div>
+                
                 
             </div>
         </div>

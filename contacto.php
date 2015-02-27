@@ -26,11 +26,11 @@
   <body>
   	<header id="nohome">
     	<div class="container no-column">
-        	<div id="logo-head" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+        	<div id="logo-head" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
             	<a href="index.php" class="logo-grande"><img src="img/logo-rojo.png" alt=""></a>
                 <a href="index.php" class="logo-chico ocultar"><img src="img/logo-chico-rojo.png" alt=""></a>
             </div>
-        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 no-column">
+        	<div class="col-lg-8 col-md-8 col-sm-7 col-xs-10 no-column">
                 <nav> 
                   <ul> 
                     <li><a href="#">Somos</a></li> 
@@ -41,12 +41,10 @@
                   </ul> 
                 </nav>
             </div>
-        	<div id="buscador" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center no-column">
-            	<form>
-                    <input type="text">
-                    <button type="submit">
-                    	<i class="fa fa-search fa-2x"></i>
-                    </button>
+        	<div id="buscador" class="col-lg-2 col-md-2 col-sm-3 col-xs-12 text-center no-column">
+            	<a class="open-buscador"><i class="fa fa-search fa-2x"></i></a>
+                <form>
+                    <input id="inputbusqueda" type="text">
                 </form>
             </div>
             
@@ -108,8 +106,11 @@
             </div>
         </div>
         
-        <div class="mapa-contacto box fwidth fleft">
-            <div class="embed-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3658256836543!2d-70.63328709999993!3d-33.43977440000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59cd2c8e269%3A0xceb6d0a97cc10b63!2sEulogia+S%C3%A1nchez+65%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1424642111059" width="600" height="200" frameborder="0" style="border:0"></iframe></div>
+        <div class="mapa-contacto container">
+        	<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 no-column">
+                <div class="embed-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3658256836543!2d-70.63328709999993!3d-33.43977440000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59cd2c8e269%3A0xceb6d0a97cc10b63!2sEulogia+S%C3%A1nchez+65%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1424642111059" width="600" height="200" frameborder="0" style="border:0"></iframe></div>
+                </div>
+            </div>
         </div>
         
         
@@ -122,19 +123,20 @@
         	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left no-column">
             	
                 <div class="box fwidth fleft">
-                	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
                     	<p>&copy; 2015</p>
-                        <p>Espacio Praxis</p>                        
+                        <p><span>Espacio Praxis</span></p>                        
                     </div>
                 	<div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    	<p>Eulogia Sanchez 065</p>
+                    	<p><span>Eulogia Sanchez 065</span></p>
                         <p>Santiago de Chile</p>                        
                     </div>
                 	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    	<p>Desarrollado</p>
-                        <p>por <a href="#">Cerro</a></p>                        
+                    	<p><span>Desarrollado</span></p>
+                        <p><span>por <a href="#">Cerro</a></span></p>                        
                     </div>
                 </div>
+                
                 
             </div>
         </div>
